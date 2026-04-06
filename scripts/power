@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+
+option=$(printf "poweroff\nreboot\nlock" | dmenu)
+
+case $option in
+	"poweroff") systemctl poweroff ;;
+	"reboot") systemctl reboot ;;
+	"lock") scripts/i3lock ;;
+	*) exit 1 ;;
+esac
+

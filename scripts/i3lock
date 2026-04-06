@@ -1,0 +1,9 @@
+#!/usr/bin/env zsh
+
+dest="$HOME/.i3lock"
+
+scrot -o $dest/i3lock.png
+
+ffmpeg -y -i $dest/i3lock.png -vf "boxblur=3" -c:a copy $dest/i3lock-blur.png
+
+i3lock -i $dest/i3lock-blur.png
