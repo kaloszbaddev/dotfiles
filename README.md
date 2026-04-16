@@ -3,5 +3,5 @@
 Some configurations that i use
 
 * font: https://sourcefoundry.org/hack/
-* dmenu: https://github.com/aario/dmenu
+* dmenu: https://tools.suckless.org/dmenu/
 

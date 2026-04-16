@@ -12,15 +12,12 @@ compinit
 
 autoload -U colors && colors
 
-ll() {
-	clear
-	echo  "*------------------------ FILES ------------------------*"
-	ls -lh $1
-	echo  "*-------------------------------------------------------*"
-}
+
+alias ll='clear && ls -lh'
+alias ff='fastfetch -l small'
 
 alias config='vim $HOME/.config/i3/config'
-alias ff='fastfetch -l small'
+alias kitty='vim $HOME/.config/kitty/kitty.conf'
 
 PROMPT='[%F{001}%n%F{078}@%F{220}%m %F{014}%~%f]%F{247}? '
 
