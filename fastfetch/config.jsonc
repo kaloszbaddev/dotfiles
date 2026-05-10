@@ -9,10 +9,12 @@
     "uptime",
     "shell",
     "wm",
+	"theme",
     "terminal",
     "cpu",
     "memory",
     "break",
-    "colors"
+    "colors",
+	"break"
   ]
 }
