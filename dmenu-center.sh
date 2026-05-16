@@ -7,8 +7,8 @@ input="${input,,}"
 
 case $input in
 	y) : ;;
-	n) exit 0 ;;
-	*) echo "wrong input!" ;;
+	n) echo "interruption" && exit 0 ;;
+	*) echo "wrong input!" && exit 1 ;;
 esac
 
 git clone https://git.suckless.org/dmenu && cd dmenu
