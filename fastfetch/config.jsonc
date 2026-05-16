@@ -7,14 +7,12 @@
     "host",
     "kernel",
     "uptime",
+    "packages",
     "shell",
-    "wm",
-	"theme",
-    "terminal",
     "cpu",
+    "gpu",
     "memory",
     "break",
-    "colors",
-	"break"
+    "colors"
   ]
 }
