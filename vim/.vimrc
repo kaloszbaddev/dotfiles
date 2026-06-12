@@ -8,7 +8,7 @@ set tabstop=4
 set laststatus=2
 
 let g:lightline = {
-     \ 'colorscheme': 'wombat',
-     \ }
+      \ 'colorscheme': 'wombat',
+      \ }
 
 colorscheme unokai
