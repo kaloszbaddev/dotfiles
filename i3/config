@@ -23,16 +23,13 @@ font pango:Hack 12
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
-exec --no-startup-id dbus-update-activation-environment --systemd \
-	DISPLAY XAUTHORITY XDG_CURRENT_DESKTOP
+# discord
+exec --no-startup-id \
+	i3-msg "workspace 2; exec firefox --new-window discord.com/app; workspace 1"
 
 # scrot
 bindsym $mod+g exec --no-startup-id scrot screenshots/%Y-%m-%d_$wx$h.png 
 bindsym $mod+Shift+s exec --no-startup-id scrot -s screenshots/%Y-%m-%d_$wx$h.png 
-
-# discord
-exec --no-startup-id flatpak run dev.vencord.Vesktop
-assign [class="vesktop"] 2
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
