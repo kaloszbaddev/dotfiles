@@ -1,6 +1,6 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 
-option=$(printf "poweroff\nreboot\nlock" | dmenu)
+option=$(printf "poweroff\nreboot\nlock" | dmenu -c -l 10)
 
 case $option in
 	"poweroff") systemctl poweroff ;;

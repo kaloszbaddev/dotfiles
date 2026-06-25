@@ -6,9 +6,10 @@ set wrap
 set shiftwidth=2
 set tabstop=4
 set laststatus=2
+set background=dark
 
 let g:lightline = {
-      \ 'colorscheme': 'wombat',
+      \ 'colorscheme': 'solarized',
       \ }
 
-colorscheme unokai
+colorscheme solarized
