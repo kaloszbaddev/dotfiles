@@ -12,4 +12,4 @@ let g:lightline = {
       \ 'colorscheme': 'solarized',
       \ }
 
-colorscheme solarized
+colorscheme solarized8
