@@ -8,4 +8,9 @@ set tabstop=4
 set laststatus=2
 set background=dark
 
-colorscheme gruvbox
+let g:lightline = {
+      \ 'colorscheme': 'solarized',
+      \ }
+
+colorscheme solarized8
+

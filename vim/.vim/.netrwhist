@@ -1,3 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
-let g:netrw_dirhist_1='/home/admin/dotfiles/kitty'
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/admin/c/test'
+let g:netrw_dirhist_9='/home/admin/c/tui-engine'
+let g:netrw_dirhist_8='/home/admin/c/test'
+let g:netrw_dirhist_7='/home/admin/c/tui-engine'
+let g:netrw_dirhist_6='/home/admin/c/bob'
+let g:netrw_dirhist_5='/home/admin/c/tui-engine'
+let g:netrw_dirhist_4='/home/admin/c/tui-test'
+let g:netrw_dirhist_3='/home/admin/c/tui-engine'
+let g:netrw_dirhist_2='/home/admin/c/tui-test'
+let g:netrw_dirhist_1='/home/admin/.config/kitty'

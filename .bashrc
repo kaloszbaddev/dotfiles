@@ -7,6 +7,6 @@
 
 alias ls='ls --color=auto'
 alias ll='ls -lh'
-alias ff='fastfetch -l small'
+alias ff='fastfetch --logo small'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]? '
