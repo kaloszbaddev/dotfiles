@@ -204,8 +204,14 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 bar {
+	i3bar_command i3bar --transparency
 	status_command i3status -c ~/.config/i3status/i3status.conf
-}
+
+	colors {
+		background #00000012
+		statusline #ffffff
+	}
+} 
 
 focus_follows_mouse no
 title_align center
