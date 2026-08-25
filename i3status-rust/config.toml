@@ -40,8 +40,7 @@ format = " home: $available.eng(w:2) "
 
 [[block]]
 block = "memory"
-format = " memory: $mem_total_used_percents.eng(w:2) "
-format_alt = " memory: $swap_used_percents.eng(w:2) "
+format = " memory: $mem_used_percents.eng(w:2) "
 
 [[block]]
 block = "sound"
