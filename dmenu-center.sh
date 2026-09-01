@@ -23,4 +23,12 @@ sudo make clean install
 
 rm -f patch.diff
 
+# solarized8 pallete
+# static const char *colors[SchemeLast][2] = {
+# 	/*     fg         bg       */
+# 	[SchemeNorm] = { "#93a1a1", "#002b36" },
+# 	[SchemeSel] = { "#eeeeee", "#2aa198" },
+# 	[SchemeOut] = { "#000000", "#00ffff" },
+# };
+
 popd
