@@ -207,4 +207,7 @@ gaps inner 3
 
 bar {
 	status_command i3status-rs ~/.config/i3status-rust/config.toml
+	colors {
+		background #002b36
+	}
 } 

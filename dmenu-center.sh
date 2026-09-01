@@ -27,7 +27,7 @@ rm -f patch.diff
 # static const char *colors[SchemeLast][2] = {
 # 	/*     fg         bg       */
 # 	[SchemeNorm] = { "#93a1a1", "#002b36" },
-# 	[SchemeSel] = { "#eeeeee", "#2aa198" },
+# 	[SchemeSel] = { "#eeeeee", "#285577" },
 # 	[SchemeOut] = { "#000000", "#00ffff" },
 # };
 
