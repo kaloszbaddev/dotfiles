@@ -5,16 +5,12 @@ error() { echo -e "\033[31m"$1"\033[0m"; }
 
 sudo sed -i "/\[multilib\]/,/Include/ s/^#//" /etc/pacman.conf
 
-sudo pacman -Sy --needed xorg xorg-server xorg-xinit \
-                    xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon \
-                    pipewire pipewire-pulse pipewire-alsa pipewire-jack wireplumber \ 
-                    i3 i3status-rust kitty firefox htop pulsemixer vim flatpak steam \
-                    meson ninja \
-                    ttf-terminus-nerd
+sudo pacman -Sy --needed - < packets.txt
 
 flatpak install dev.vencord.Vesktop org.vinegarhq.Sober com.lunarclient.LunarClient
 
 mkdir -p $HOME/.config/i3status-rust
+mkdir -p $HOME/.config/i3
 mkdir -p $HOME/.config/kitty 
 
 rm -rf $HOME/.config/dunst
