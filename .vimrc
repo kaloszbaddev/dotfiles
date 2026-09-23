@@ -1,0 +1,10 @@
+set nocompatible
+set termguicolors
+set number
+set wrap
+set shiftwidth=2
+set tabstop=4
+set expandtab
+set background=dark
+syntax off
+colorscheme pablo
