@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+option=$(printf "poweroff\nreboot\nlock" | dmenu -c -l 8)
+
+case $option in
+	"poweroff") systemctl poweroff ;;
+	"reboot") systemctl reboot ;;
+	"lock") scripts/i3lock ;;
+	*) exit 1 ;;
+esac
+

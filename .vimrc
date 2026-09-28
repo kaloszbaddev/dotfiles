@@ -6,5 +6,5 @@ set shiftwidth=2
 set tabstop=4
 set expandtab
 set background=dark
-syntax off
-colorscheme pablo
+syntax on
+colorscheme habamax

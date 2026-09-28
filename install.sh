@@ -9,10 +9,6 @@ sudo pacman -Sy --needed - < packets.txt
 
 flatpak install dev.vencord.Vesktop org.vinegarhq.Sober com.lunarclient.LunarClient
 
-mkdir -p $HOME/.config/i3status-rust
-mkdir -p $HOME/.config/i3
-mkdir -p $HOME/.config/kitty 
-
 rm -rf $HOME/.config/dunst
 rm -rf $HOME/.config/picom
 rm -rf $HOME/.config/dmenu
@@ -24,11 +20,13 @@ git clone https://git.suckless.org/dmenu $HOME/.config/dmenu
 patch -p1 -d $HOME/.config/dmenu < dmenu/patch.diff
 
 sudo cp dmenu/config.h $HOME/.config/dmenu
-cp dunst/dunstrc $HOME/.config/dunst
-cp picom/picom.conf $HOME/.config/picom
-cp i3/config $HOME/.config/i3
-cp i3status-rust/config.toml $HOME/.config/i3status-rust
-cp kitty/kitty.conf $HOME/.config/kitty
+
+cp -r i3status-rust $HOME/.config
+cp -r kitty $HOME/.config
+cp -r i3 $HOME/.config
+cp -r dunst $HOME/.config
+cp -r picom $HOME/.config
+cp -r scripts $HOME
 cp .bashrc $HOME
 cp .vimrc $HOME
 cp .xinitrc $HOME
