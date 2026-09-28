@@ -30,9 +30,9 @@ exec --no-startup-id flatpak run dev.vencord.Vesktop
 assign [class = "vesktop"] 2
 
 # dunst
-exec_always --no-startup-id killall dunst; dunst &
+exec --no-startup-id dunst &
 # picom
-exec_always --no-startup-id killall picom; picom &
+exec --no-startup-id picom &
 
 # scrot
 bindsym $mod+g exec --no-startup-id scrot ~/screenshots/%Y-%m-%d_$wx$h.png 
