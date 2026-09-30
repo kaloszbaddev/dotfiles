@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+if command -v flatpak &> /dev/null; then
+    flatpak run dev.vencord.Vesktop & 
+fi
+
+if command -v dunst &> /dev/null; then
+    dunst &
+fi
+
+if command -v picom &> /dev/null; then
+    picom &
+fi
+
+if command -v xrandr &> /dev/null; then
+    xrandr --output HDMI-A-0 --mode 1920x1080 --rate 180.0
+fi

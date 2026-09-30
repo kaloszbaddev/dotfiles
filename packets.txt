@@ -25,3 +25,4 @@ libconifg
 cmake
 uthash
 network-manager-applet
+lxappearance
