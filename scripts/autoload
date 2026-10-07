@@ -5,11 +5,15 @@ if command -v flatpak &> /dev/null; then
 fi
 
 if command -v dunst &> /dev/null; then
-    dunst &
+    if ! pgrep dunst; then
+        dunst &
+    fi
 fi
 
 if command -v picom &> /dev/null; then
-    picom &
+    if ! pgrep picom; then
+        picom &
+    fi
 fi
 
 if command -v xrandr &> /dev/null; then
