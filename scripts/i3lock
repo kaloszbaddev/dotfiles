@@ -3,11 +3,17 @@
 dest="$HOME/.i3lock"
 
 if ! [[ -d "$dest" ]]; then
-    mkdir -p "$dest"
+    mkdir "$dest"
 fi
 
-scrot -o $dest/i3lock.png
+if command -v scrot &> /dev/null; then
+    scrot -o $dest/i3lock.png
+fi
 
-ffmpeg -y -i $dest/i3lock.png -vf "boxblur=3" -c:a copy $dest/i3lock-blur.png
+if command -v ffmpeg &> /dev/null; then 
+    ffmpeg -y -i $dest/i3lock.png -vf "boxblur=3" -c:a copy $dest/i3lock-blur.png
+fi
 
-i3lock -i $dest/i3lock-blur.png
+if command -v i3lock &> /dev/null; then
+    i3lock -i $dest/i3lock-blur.png
+fi

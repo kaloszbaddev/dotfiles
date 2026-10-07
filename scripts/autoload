@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 
 if command -v flatpak &> /dev/null; then
-    flatpak run dev.vencord.Vesktop & 
+    flatpak run dev.vencord.Vesktop &> /dev/null & 
 fi
 
 if command -v dunst &> /dev/null; then
-    if ! pgrep dunst; then
+    if ! pgrep dunst &> /dev/null; then
         dunst &
     fi
 fi
 
 if command -v picom &> /dev/null; then
-    if ! pgrep picom; then
+    if ! pgrep picom &> /dev/null; then
         picom &
     fi
 fi

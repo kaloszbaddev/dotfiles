@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+if ! command -v dmenu &> /dev/null; then
+    echo "dmenu is not installed"
+    exit 1
+fi
+
 option=$(printf "poweroff\nreboot\nlock" | dmenu -c -l 8)
 
 case $option in
