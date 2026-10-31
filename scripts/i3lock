@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+dest="$HOME/.i3lock"
+
+if ! [[ -d "$dest" ]]; then
+    mkdir "$dest"
+fi
+
+if command -v scrot &> /dev/null; then
+    scrot -o $dest/i3lock.png
+fi
+
+if command -v ffmpeg &> /dev/null; then 
+    ffmpeg -y -i $dest/i3lock.png -vf "boxblur=3" -c:a copy $dest/i3lock-blur.png
+fi
+
+if command -v i3lock &> /dev/null; then
+    i3lock -i $dest/i3lock-blur.png
+fi

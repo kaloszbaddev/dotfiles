@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+if ! command -v dmenu &> /dev/null; then
+    echo "dmenu is not installed"
+    exit 1
+fi
+
+option=$(printf "poweroff\nreboot\nlock" | dmenu -b)
+
+case $option in
+	"poweroff") systemctl poweroff ;;
+	"reboot") systemctl reboot ;;
+	"lock") scripts/i3lock ;;
+	*) exit 1 ;;
+esac
+

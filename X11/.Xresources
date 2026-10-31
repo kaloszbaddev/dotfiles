@@ -1,0 +1,27 @@
+XTerm*faceName   : Terminus
+XTerm*faceSize   : 15
+XTerm*renderFont : true
+
+XTerm*background : #282c34
+XTerm*foreground : #abb2bf
+
+XTerm*color0  : #282c34
+XTerm*color1  : #e06c75
+XTerm*color2  : #98c379
+XTerm*color3  : #e5c07b
+XTerm*color4  : #61afef
+XTerm*color5  : #be5046
+XTerm*color6  : #56b6c2
+XTerm*color7  : #979eab
+XTerm*color8  : #393e48
+XTerm*color9  : #d19a66
+XTerm*color10 : #56b6c2
+XTerm*color11 : #e5c07b
+XTerm*color12 : #61afef
+XTerm*color13 : #be5046
+XTerm*color14 : #56b6c2
+XTerm*color15 : #abb2bf
+
+XTerm*VT100.Translations: #override \
+    Ctrl Shift <Key>V: insert-selection(CLIPBOARD)\n\
+    Ctrl Shift <Key>C: copy-selection(CLIPBOARD) 
