@@ -17,6 +17,7 @@ dunst
 firefox
 xterm
 htop
+ranger
 vim
 flatpak
 steam
@@ -24,3 +25,6 @@ terminus-font
 lxappearance
 scrot
 curl
+stow
+patch
+base-devel

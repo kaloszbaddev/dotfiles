@@ -37,7 +37,7 @@ sudo make clean install
 
 popd
 
-stow --dir "$DOTFILES_DIR" bash dunst fastfetch i3 \
+stow --adopt --dir "$DOTFILES_DIR" bash dunst fastfetch i3 \
                            images picom scripts vim X11
 
 info "reboot pc [y/N]"
