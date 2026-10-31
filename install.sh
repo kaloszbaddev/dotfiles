@@ -19,6 +19,7 @@ flatpak install dev.vencord.Vesktop \
                 com.lunarclient.LunarClient
 
 # create default directories
+mkdir -p $HOME/.config
 mkdir -p $HOME/downloads
 mkdir -p $HOME/screenshots
 mkdir -p $HOME/vms

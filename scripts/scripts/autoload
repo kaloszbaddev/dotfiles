@@ -16,6 +16,10 @@ if command -v picom &> /dev/null; then
     picom &
 fi
 
+if command -v feh &> /dev/null; then
+    feh --bg-fill $HOME/images/wallpaper.jpg
+fi
+
 if command -v xrandr &> /dev/null; then
     xrandr --output HDMI-A-0 --mode 1920x1080 --rate 180.0
 fi

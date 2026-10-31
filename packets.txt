@@ -15,6 +15,7 @@ pulsemixer
 picom
 dunst
 firefox
+fastfetch
 xterm
 htop
 ranger
