@@ -33,7 +33,7 @@ pushd ~/.config
 git clone https://git.suckless.org/dmenu
 cd dmenu
 patch -p1 <<< $(curl https://tools.suckless.org/dmenu/patches/center/dmenu-center-20250407-b1e217b.diff)  
-stow --dir "$DOTFILES_DIR" dmenu
+stow --adopt --dir "$DOTFILES_DIR" dmenu
 sudo make clean install
 
 popd

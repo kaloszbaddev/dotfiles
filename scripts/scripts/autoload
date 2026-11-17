@@ -17,7 +17,7 @@ if command -v picom &> /dev/null; then
 fi
 
 if command -v feh &> /dev/null; then
-    feh --bg-fill $HOME/images/wallpaper.jpg
+    feh --bg-fill "$CURR_WALLPAPER"  
 fi
 
 if command -v xrandr &> /dev/null; then
